@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+    <title>WEATHER</title>
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            <img src="./images/clear-sky.png">
+            <h1>Weather</h1>
+        </div>
+        <div class="search">
+            <input type="text" name="cityname" id="cityname" placeholder="enter city name" spellcheck="false">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="city-weather">
+            <img src="./images/clouds.png" alt="weather_img">
+            <h1 class="temperature">28°C</h1>
+            <h2 class="city-name">Warangal</h2>
+            <div class="details">
+                <div class="humidity">
+                    <img src="./images/humidity.png" alt="humidity-img">
+                    <div class="text">
+                        <p>Humidity</p>
+                        <p><b>50%</b></p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <img src="./images/wind.png" alt="wind-img">
+                    <div class="text">
+                        <p>Wind</p>
+                        <p><b>14 Kmph</b></p>
+                    </div>
+                </div>
+                <div class="sun">
+                    <div class="sunrise">
+                        <img src="./images/sunrise.png" alt="sunrise">
+                        <div class="text">
+                            <small><p>Sunrise</p></small>
+                            <p><b>6:25 <small>am</small></b></p>
+                        </div>
+                    </div>
+                    <div class="sunset">
+                        <img src="./images/sunset.png" alt="sunrise">
+                        <div class="text">
+                            <small><p>Sunset</p></small>
+                            <p><b>6:20 <small>pm</small></b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pressure">
+                    <img src="./images/pressure.png" alt="pressure">
+                    <div class="text">
+                        <h4>1009</h4>
+                        <p>mBar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
